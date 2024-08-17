@@ -7,6 +7,8 @@
 Apr. 9, 2024 · Yosh Wuyts
 
 - https://blog.rust-lang.org/2024/04/09/updates-to-rusts-wasi-targets.html
+- wasi 2.0
+  - https://wasi.dev/
 
 <table>
 <thead>
