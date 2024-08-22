@@ -67,7 +67,7 @@ async fn main() -> anyhow::Result<()> {
         counter: Arc::new(PrimeState::new()),
     };
 
-    axum::server::bind(&addr)
+    axum_server::bind(addr)
         .serve(router(state)?.into_make_service())
         .await
         .context("error while starting API server")?;
