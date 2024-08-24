@@ -1,0 +1,15 @@
+[package]
+name = "wasix-tokio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.22"
+tokio = { version = "1.39.3", features = ["full"] }
+tracing = "0.1.40"
+tracing-subscriber = {version = "0.3.18", features =["env-filter"]}
+
+
+[patch.crates-io]
+libc = { git = "https://github.com/wasix-org/libc", branch = "master" }
+# tokio = { git = "https://github.com/wasix-org/tokio", branch = "wasix-1.24.2" }
