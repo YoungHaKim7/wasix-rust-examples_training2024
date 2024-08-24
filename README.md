@@ -1,5 +1,12 @@
 # WASIX - HTMX Example
 
+- https://wasix.org/
+
+```bash
+cargo install cargo-wasix
+```
+- https://wasix.org/docs/language-guide/rust/installation
+
 ## Overview
 
 This is a simple example of using [htmx](https://htmx.org/) with [axum](https://github.com/tokio-rs/axum) and [askama](https://github.com/djc/askama) to create a simple web application.
