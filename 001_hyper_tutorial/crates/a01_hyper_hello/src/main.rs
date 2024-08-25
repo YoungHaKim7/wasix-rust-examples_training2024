@@ -12,9 +12,9 @@ use tokio::net::TcpListener;
 
 // This would normally come from the `hyper-util` crate, but we can't depend
 // on that here because it would be a cyclical dependency.
-#[path = "../../support_tokio_io_time/src/support/mod.rs"]
-mod support;
-use support::{TokioIo, TokioTimer};
+// #[path = "../../support_tokio_io_time/src/support/mod.rs"]
+// mod support;
+use support_tokio_io_time::support::tokiort::{TokioIo, TokioTimer};
 
 // An async function that consumes a request, does nothing with it and returns a
 // response.
