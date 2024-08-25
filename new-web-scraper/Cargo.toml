@@ -1,0 +1,12 @@
+[package]
+name = "new-web-scraper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+colored = "2.1.0"
+scraper = "0.20.0"
+tokio = { version = "1", features = ["full"] }
+
+hyper = { version = "0.14", features = ["client", "runtime", "server"] }

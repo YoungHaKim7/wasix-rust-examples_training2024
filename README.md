@@ -66,6 +66,9 @@ This package is available on [wasmer registry](https://wasmer.io/wasmer/wasix-ht
 # wasix-rust-examples_training2024
 - https://github.com/wasix-org/wasix-rust-examples
   - http://wasix.org/docs/language-guide/rust/examples
+    - hyper examples
+      - https://github.com/hyperium/hyper/tree/master/examples
+      - https://hyper.rs/guides/1/client/basic/
 
 # Changes to Rust's WASI targets
 
