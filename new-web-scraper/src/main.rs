@@ -1,3 +1,4 @@
+use hyper::body::Buf;
 // use hyper::{body::Body, service::service_fn, Request, Response, StatusCode};
 // use std::convert::Infallible;
 // use std::net::SocketAddr;
@@ -76,7 +77,7 @@ async fn handle(_req: Request<Body>) -> Result<Response<Body>, Infallible> {
     };
 
     let mut news = news_scraper::NewsScraper::new();
-    news.scrape(&page);
+    news.scrape(page.chunk());
     let response = news.get_news();
     let body = String::from_utf8_lossy(response.as_bytes()).to_string();
 

@@ -135,3 +135,12 @@ impl NewsScraper {
         news
     }
 }
+
+impl fmt::Display for NewsScraper {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        for news_headline in &self.news {
+            writeln!(f, "{}", news_headline)?;
+        }
+        Ok(())
+    }
+}
