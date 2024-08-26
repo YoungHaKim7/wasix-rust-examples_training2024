@@ -15,7 +15,7 @@
 
 <hr>
 
-- [(Rust_WASM)wasip Tutorial&examples예시 정리](#wasix-rust-examples_training2024)
+- [(Rust_WASM)wasip Tutorial&examples예시 정리(rustup target add wasm32-wasip1)](#wasix-rust-examples_training2024)
   - [wasm-tools](#wasm-tools)
 
 <hr>
