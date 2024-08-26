@@ -84,6 +84,86 @@ This package is available on [wasmer registry](https://wasmer.io/wasmer/wasix-ht
 - wasi
   - https://github.com/WebAssembly/WASI
 
+<hr>
+
+# A language binding generator for WebAssembly interface types 
+- https://github.com/bytecodealliance/wit-bindgen
+
+- Guest: Rust
+  - The Rust compiler supports a native `wasm32-wasip1` target and can be added to any `rustup`-based toolchain with:
+
+```bash
+rustup target add wasm32-wasip1
+```
+
+- In order to compile a wasi dynamic library, the following must be added to the `Cargo.toml` file:
+
+```toml
+[lib]
+crate-type = ["cdylib"]
+```
+
+- Projects can then depend on `wit-bindgen` by executing:
+
+```bash
+cargo add wit-bindgen
+```
+
+- WIT files are currently added to a `wit/` folder adjacent to your `Cargo.toml` file. Example code using this then looks like:
+
+```rs
+// src/lib.rs
+
+// Use a procedural macro to generate bindings for the world we specified in
+// `host.wit`
+wit_bindgen::generate!({
+    // the name of the world in the `*.wit` input file
+    world: "host",
+});
+
+// Define a custom type and implement the generated `Guest` trait for it which
+// represents implementing all the necessary exported interfaces for this
+// component.
+struct MyHost;
+
+impl Guest for MyHost {
+    fn run() {
+        print("Hello, world!");
+    }
+}
+
+// export! defines that the `MyHost` struct defined below is going to define
+// the exports of the `world`, namely the `run` function.
+export!(MyHost);
+```
+
+- By using `cargo expand` or `cargo doc` you can also explore the generated code. If there's a bug in wit-bindgen and the generated bindings do not compile or if there's an error in the generated code (which is probably also a bug in `wit-bindgen`), you can use `WIT_BINDGEN_DEBUG=1` as an environment variable to help debug this.
+
+- This project can then be built with:
+
+```
+cargo build --target wasm32-wasip1
+wasm-tools component new ./target/wasm32-wasip1/debug/my-project.wasm \
+    -o my-component.wasm --adapt ./wasi_snapshot_preview1.reactor.wasm
+```
+
+
+- This creates a `my-component.wasm` file which is suitable to execute in any component runtime. Using `wasm-tools` you can inspect the binary as well, for example inferring the WIT world that is the component:
+
+```
+wasm-tools component wit my-component.wasm
+# world my-component {
+#  import print: func(msg: string)
+#  export run: func()
+# }
+```
+
+- which in this case, as expected, is the same as the input world.
+
+- https://github.com/bytecodealliance/wit-bindgen
+
+<hr>
+
 # Changes to Rust's WASI targets
 
 Apr. 9, 2024 · Yosh Wuyts
