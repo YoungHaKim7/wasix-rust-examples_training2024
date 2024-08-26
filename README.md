@@ -3,11 +3,17 @@
   <img width=55px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />
 </p>
 
+<hr>
+
 # link
 
 - [wat-> wasm변환](#wat2wasm)
 - [Rust에 WASM설치하기wasm-supportrust](#wasm-supportrust)
   - [rust_wasm기초](#rust_wasm)
+
+<hr>
+
+- [(Rust_WASM)wasip Tutorial&examples예시 정리](#wasix-rust-examples_training2024)
 
 <hr>
 
