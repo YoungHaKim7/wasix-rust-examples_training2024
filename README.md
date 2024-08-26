@@ -296,6 +296,34 @@ wasm-tools component wit my-component.wasm
 
 - https://github.com/bytecodealliance/wit-bindgen
 
+
+# wasm-tools[|🔝|](#link)
+
+- https://github.com/bytecodealliance/wasm-tools
+
+- https://github.com/bytecodealliance/wasm-tools/blob/main/examples/wasm-smith.rs
+
+```rs
+use arbitrary::Unstructured;
+use wasm_smith::{Config, Module};
+use wasmprinter::print_bytes;
+
+fn test_wasm_smith() {
+    let seed = "W3B4553MB1Y!!!!!!!!!!!!!!!!!!!!!!!!!!";
+    let mut u = Unstructured::new(seed.as_bytes());
+    if let Ok(module) = Module::new(Config::default(), &mut u) {
+        let wasm_buffer = module.to_bytes();
+        if let Ok(wat) = print_bytes(wasm_buffer) {
+            println!("{}", wat);
+        }
+    }
+}
+
+fn main() {
+    test_wasm_smith();
+}
+```
+
 <hr>
 
 # Changes to Rust's WASI targets[|🔝|](#link)
