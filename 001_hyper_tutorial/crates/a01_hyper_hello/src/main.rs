@@ -31,7 +31,7 @@ pub async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
     // Bind to the port and listen for incoming TCP connections
     let listener = TcpListener::bind(addr).await?;
-    println!("Listening on http://{}", addr);
+    println!("🚀🚀 Listening on http://{}" 🚀🚀, addr);
     loop {
         // When an incoming TCP connection is received grab a TCP stream for
         // client<->server communication.
