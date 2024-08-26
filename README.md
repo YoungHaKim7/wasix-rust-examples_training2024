@@ -433,6 +433,9 @@ Apr. 9, 2024 · Yosh Wuyts
 - wasi preview0 ~ 2 history
 - preview 0과 preview1
   - https://github.com/WebAssembly/WASI/blob/main/legacy/README.md
+- preview 2
+  - https://github.com/WebAssembly/WASI
+
  
 <hr>
 
