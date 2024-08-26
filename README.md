@@ -72,6 +72,9 @@ This package is available on [wasmer registry](https://wasmer.io/wasmer/wasix-ht
 
 - https://github.com/WebAssembly/wasi-sockets
 
+- wasi
+  - https://github.com/WebAssembly/WASI
+
 # Changes to Rust's WASI targets
 
 Apr. 9, 2024 · Yosh Wuyts
