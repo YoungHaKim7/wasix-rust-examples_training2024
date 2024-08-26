@@ -11,6 +11,8 @@
 - [Rust에 WASM설치하기wasm-supportrust](#wasm-supportrust)
   - [rust_wasm기초](#rust_wasm)
 
+- [wit-bindgen라이브러리 사용법_러스트코드 기초](#a-language-binding-generator-for-webassembly-interface-types)
+
 <hr>
 
 - [(Rust_WASM)wasip Tutorial&examples예시 정리](#wasix-rust-examples_training2024)
