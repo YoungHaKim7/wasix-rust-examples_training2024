@@ -384,7 +384,7 @@ Apr. 9, 2024 · Yosh Wuyts
 
 <hr>
 
-# wasi1부터 wasi2까지 잘 정리된 블로그(wasm32-wasip1 & wasm32-wasip2)[|🔝|](#link)
+# wasip1부터 wasip2까지 잘 정리된 블로그(wasm32-wasip1 & wasm32-wasip2)[|🔝|](#link)
 - wasip2의 약자(WASI preview 2)
   - https://benw.is/posts/plugins-with-rust-and-wasi
  
