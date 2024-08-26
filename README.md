@@ -1,4 +1,73 @@
-# WASIX - HTMX Example
+<p align="center">
+  <img width=50px src="https://user-images.githubusercontent.com/67513038/228839577-3c3be948-d204-4245-b2a7-1cc96b18230b.svg" />
+  <img width=55px src="https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png" />
+</p>
+
+# link
+
+- [wat-> wasm변환](#wat2wasm)
+- [Rust에 WASM설치하기wasm-supportrust](#wasm-supportrust)
+  - [rust_wasm기초](#rust_wasm)
+
+<hr>
+
+# 초기에는 여기에 정리했음(Rust_WASM)
+- https://github.com/YoungHaKim7/Rust_WASM
+
+# wat2wasm[|🔝|](#link)
+
+- wit -> wasm으로 변환 가능
+
+https://github.com/WebAssembly/wabt
+
+# WASM support(Rust)[|🔝|](#link)
+
+- https://component-model.bytecodealliance.org/introduction.html
+
+- https://wasi.dev/
+
+  - install
+
+  ```bash
+
+  rustup target add wasm32-wasi
+  ```
+
+  ```
+  cargo build --target wasm32-wasi
+  wasmer run target/wasm32-wasi/debug/cve-rs.wasm
+  ```
+  https://wasmer.io/
+
+  https://github.com/Speykious/cve-rs
+
+
+  ```bash
+  curl https://get.wasmer.io -sSfL | sh
+  ```
+
+  - Run in CLI
+
+  ```bash
+  wasmer run cowsay "Hello world"
+  ```
+
+  ```
+  pdating bash profile /Users/g/.config/fish/config.fish
+  we've added the following to your /Users/g/.config/fish/config.fish
+  If you have a different profile please add the following:
+  ```
+
+  - Wasmer
+  ```bash
+  export WASMER_DIR="/Users/g/.wasmer"
+  [ -s "$WASMER_DIR/wasmer.sh" ] && source "$WASMER_DIR/wasmer.sh"
+  check: wasmer 4.2.7 installed successfully ✓
+  wasmer will be available the next time you open the terminal.
+  If you want to have the commands available now please execute:
+  ```
+
+# WASIX - HTMX Example[|🔝|](#link)
 
 - https://wasix.org/
 
@@ -86,7 +155,7 @@ This package is available on [wasmer registry](https://wasmer.io/wasmer/wasix-ht
 
 <hr>
 
-# A language binding generator for WebAssembly interface types 
+# A language binding generator for WebAssembly interface types[|🔝|](#link)
 - https://github.com/bytecodealliance/wit-bindgen
 
 - Guest: Rust
@@ -164,7 +233,7 @@ wasm-tools component wit my-component.wasm
 
 <hr>
 
-# Changes to Rust's WASI targets
+# Changes to Rust's WASI targets[|🔝|](#link)
 
 Apr. 9, 2024 · Yosh Wuyts
 
