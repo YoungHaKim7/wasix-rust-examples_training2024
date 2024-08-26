@@ -70,6 +70,9 @@ This package is available on [wasmer registry](https://wasmer.io/wasmer/wasix-ht
       - https://github.com/hyperium/hyper/tree/master/examples
       - https://hyper.rs/guides/1/client/basic/
 
+- Plugins with Rust and WASI Preview 2 2024-07-16 01:00:00 UTC
+  - https://benw.is/posts/plugins-with-rust-and-wasi
+
 - https://github.com/WebAssembly/wasi-sockets
 
 - wasi
