@@ -11,6 +11,10 @@
 
 <hr>
 
+- [Rust(wasm32-wasip2)로 넘어가는 버젼별 계획](#changes-to-rusts-wasi-targets)
+
+<hr>
+
 # 초기에는 여기에 정리했음(Rust_WASM)
 - https://github.com/YoungHaKim7/Rust_WASM
 
