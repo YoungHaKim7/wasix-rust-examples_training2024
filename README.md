@@ -67,6 +67,58 @@ https://github.com/WebAssembly/wabt
   If you want to have the commands available now please execute:
   ```
 
+# Rust_WASM[|🔝|](#link)
+
+eBook https://docs.wasmtime.dev/
+
+- Examples https://github.com/bytecodealliance/wasmtime/tree/main/examples
+
+- wasmtime install
+  - https://github.com/bytecodealliance/wasmtime
+
+- build
+```
+cargo build --target wasm32-wasi --release
+```
+
+- install
+```
+rustup target add wasm32-wasi
+```
+
+- https://stackoverflow.com/questions/74968490/the-wasm32-wasi-target-may-not-be-installed-while-it-is-installed
+
+
+- C++로 만든거 wasm실행하기
+  - eBook1 https://wasmedge.org/docs/start/overview
+    - eBook https://wasmedge.org/docs/category/build-wasmedge-from-source/
+
+- C++로 만든거 https://github.com/WebAssembly/wabt
+
+- WASM 최적화 시키기 인터프리터 모드에서 더 빠르게 최적화
+  - https://wasmedge.org/docs/start/build-and-run/cli#call-a-webassembly-function-compiled-from-rust
+
+# Call a WebAssembly function compiled from Rust
+
+The add program is written in Rust and contains an exported add() function. You can compile it into WebAssembly and use wasmedge to call the add() function. In this example, you will see how it is done from the CLI. It is often used when you embed WasmEdge into another host application, and need to call a WASM function from the host.
+
+You will need to have the Rust compiler installed, and then use the following command to build the WASM bytecode file from the Rust source code.
+
+```
+cargo build --target wasm32-wasi --release
+```
+
+You can execute wasmedge in reactor mode to invoke the add() function with two i32 integer input parameters.
+
+```
+wasmedge --reactor add.wasm add 2 2
+```
+
+- https://wasmedge.org/docs/start/build-and-run/cli#call-a-webassembly-function-compiled-from-rust
+
+<hr>
+
+
 # WASIX - HTMX Example[|🔝|](#link)
 
 - https://wasix.org/
