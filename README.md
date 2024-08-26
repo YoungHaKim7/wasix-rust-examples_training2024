@@ -23,6 +23,9 @@
 - [Rust(wasm32-wasip2)로 넘어가는 버젼별 계획](#changes-to-rusts-wasi-targets)
   - [wasip1부터 wasip2까지 잘 정리된 블로그(wasm32-wasip1 & wasm32-wasip2)](#wasip1부터-wasip2까지-잘-정리된-블로그wasm32-wasip1--wasm32-wasip2)
 
+- WASI preview 0~2 History
+  - [wasip0부터 ~ wasip2까지 History](#wasip0부터-wasip2까지-history)
+
 <hr>
 
 # 초기에는 여기에 정리했음(Rust_WASM)
