@@ -1,0 +1,18 @@
+[package]
+name = "support_tokio_io_time"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pin-project-lite = { workspce = true }
+
+hyper = { workspce = true , features = ["full"] }
+tokio = { workspce = true , features = ["full"] }
+pretty_env_logger = { workspce = true }
+http-body-util = { workspce = true }
+bytes = { workspce = true }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { workspce = true }
+form_urlencoded = { workspce = true }
+http = { workspce = true }
+futures-util = { workspce = true , default-features = false }
