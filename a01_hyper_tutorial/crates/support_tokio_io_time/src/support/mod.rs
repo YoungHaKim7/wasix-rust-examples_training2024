@@ -1,3 +1,4 @@
 pub mod tokiort;
+pub use self::tokiort::TokioIo;
 #[allow(unused)]
-pub use tokiort::{TokioExecutor, TokioIo, TokioTimer};
+pub use self::tokiort::{TokioExecutor, TokioIo, TokioTimer};

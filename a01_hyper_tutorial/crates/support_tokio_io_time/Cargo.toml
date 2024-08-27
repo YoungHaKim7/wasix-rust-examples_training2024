@@ -1,18 +1,54 @@
 [package]
 name = "support_tokio_io_time"
-version = "0.1.0"
-edition = "2021"
+# version.workspace = true
+# edition.workspace = true
 
 [dependencies]
-pin-project-lite = { workspce = true }
+bytes.workspace = true
+form_urlencoded.workspace = true
+# futures-util.workspace = true
+http.workspace = true
+http-body-util.workspace = true
+hyper.workspace = true
+pin-project-lite.workspace = true
+pretty_env_logger.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
 
-hyper = { workspce = true , features = ["full"] }
-tokio = { workspce = true , features = ["full"] }
-pretty_env_logger = { workspce = true }
-http-body-util = { workspce = true }
-bytes = { workspce = true }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = { workspce = true }
-form_urlencoded = { workspce = true }
-http = { workspce = true }
-futures-util = { workspce = true , default-features = false }
+
+[workspace.dependencies.bytes]
+version = "1"
+
+[workspace.dependencies.form_urlencoded]
+version = "1"
+
+[workspace.dependencies.futures-util]
+default-features = false
+
+[workspace.dependencies.http]
+version = "1"
+
+[workspace.dependencies.http-body-util]
+version = "0.1"
+
+[workspace.dependencies.hyper]
+version = "1"
+features = ["full"]
+
+[workspace.dependencies.pretty_env_logger]
+version = "0.5"
+
+[workspace.dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[workspace.dependencies.serde_json]
+version = "1"
+
+[workspace.dependencies.tokio]
+version = "1"
+features = ["full"]
+
+[workspace.dependencies.pin-project-lite]
+version = "0.2.14"

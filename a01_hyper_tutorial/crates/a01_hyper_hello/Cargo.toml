@@ -1,21 +1,30 @@
 [package]
 name = "a01_hyper_hello"
-version = "0.1.0"
-edition = "2021"
+# version.workspace = true
+# edition = "2021"
 
 [dependencies]
-hyper = { workspace = true , features = ["full"] }
-tokio = {  workspace = true , features = ["full"] }
-pretty_env_logger = { workspace = true }
-http-body-util = { workspace = true }
-bytes = { workspace = true }
-serde = { workspace = true , features = ["derive"] }
-serde_json = { workspace = true }
-form_urlencoded = { workspace = true }
-http =  { workspace = true }
-futures-util = {  workspace = true , default-features = false }
+# bytes.workspace = true
+# futures-util = "0.3.30"
+# http-body-util.workspace = true
+# hyper = { workspace = true, features = ["full"] }
+# pretty_env_logger.workspace = true
+# tokio = { workspace = true, features = ["full"] }
+# hyper = { workspace = true , features = ["full"] }
+# tokio = {  workspace = true , features = ["full"] }
+# pretty_env_logger = { workspace = true }
+# http-body-util = { workspace = true }
+# bytes = { workspace = true }
+# serde = { workspace = true , features = ["derive"] }
+# serde_json = { workspace = true }
+# form_urlencoded = { workspace = true }
+# http =  { workspace = true }
+# futures-util = {  workspace = true , default-features = false }
 support_tokio_io_time = { path = "../support_tokio_io_time" }
 
+
+# [workspace.dependencies.support_tokio_io_time.path]
+# path = "../support_tokio_io_time"
 
 [workspace.dependencies.bytes]
 version = "1"
@@ -23,9 +32,10 @@ version = "1"
 [workspace.dependencies.form_urlencoded]
 version = "1"
 
-[workspace.dependencies.futures-util]
-version = "1"
-default-features = false
+# [workspace.dependencies.futures-util]
+# workspace = true
+# futures-util = "0.3.30"
+# default-features = false
 
 [workspace.dependencies.http]
 version = "1"
