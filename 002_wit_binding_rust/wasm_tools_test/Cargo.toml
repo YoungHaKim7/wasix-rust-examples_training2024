@@ -1,0 +1,9 @@
+[package]
+name = "wasm_tools_test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arbitrary = "1.3.2"
+wasm-smith = "0.216.0"
+wasmprinter = "0.216.0"

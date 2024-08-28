@@ -1,0 +1,9 @@
+[package]
+name = "plugin_host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.39.3", features = ["full"] }
+wasmtime = { version = "24.0.0", features = ["component-model", "cranelift", "std", "runtime"] }
+wasmtime-wasi = "24.0.0"

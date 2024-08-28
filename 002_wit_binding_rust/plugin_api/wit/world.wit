@@ -1,0 +1,7 @@
+package my:new-world;
+
+// World name is used a lot in wasmtime and wit-bindgen
+world new-world {
+  // export a function called greeting that takes a name with type string and returns a string
+  export greeting: func(name: string) -> string;
+}

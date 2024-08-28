@@ -1,0 +1,10 @@
+[package]
+name = "plugin_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wit-bindgen = "0.30.0"
+
+[package.metadata.component]
+package = "my:new-world"
