@@ -226,3 +226,60 @@ where
         hyper::rt::Write::poll_write_vectored(self.project().inner, cx, bufs)
     }
 }
+
+// use hyper::rt::{Read, Write};
+// use std::io::{self, Cursor, Read as IoRead, Write as IoWrite};
+
+// impl Read for Cursor<&[u8]> {
+//     fn poll_read(
+//         self: std::pin::Pin<&mut Self>,
+//         _cx: &mut std::task::Context<'_>,
+//         buf: &mut [u8],
+//     ) -> std::task::Poll<io::Result<()>> {
+//         let inner = std::pin::Pin::into_inner(self);
+//         let n = inner.read(buf)?;
+//         if n == 0 {
+//             std::task::Poll::Ready(Ok(()))
+//         } else {
+//             std::task::Poll::Pending
+//         }
+//     }
+// }
+
+// impl Write for Cursor<Vec<u8>> {
+//     fn poll_write(
+//         self: std::pin::Pin<&mut Self>,
+//         _cx: &mut std::task::Context<'_>,
+//         buf: &[u8],
+//     ) -> std::task::Poll<io::Result<usize>> {
+//         let inner = std::pin::Pin::into_inner(self);
+//         let n = inner.write(buf)?;
+//         std::task::Poll::Ready(Ok(n))
+//     }
+
+//     fn poll_flush(
+//         self: std::pin::Pin<&mut Self>,
+//         _cx: &mut std::task::Context<'_>,
+//     ) -> std::task::Poll<io::Result<()>> {
+//         std::task::Poll::Ready(Ok(()))
+//     }
+
+//     fn poll_shutdown(
+//         self: std::pin::Pin<&mut Self>,
+//         _cx: &mut std::task::Context<'_>,
+//     ) -> std::task::Poll<io::Result<()>> {
+//         std::task::Poll::Ready(Ok(()))
+//     }
+
+//     fn is_write_vectored(&self) -> bool {
+//         false
+//     }
+
+//     fn poll_write_vectored(
+//         self: std::pin::Pin<&mut Self>,
+//         _cx: &mut std::task::Context<'_>,
+//         _bufs: &[std::io::IoSlice<'_>],
+//     ) -> std::task::Poll<io::Result<usize>> {
+//         std::task::Poll::Ready(Ok(0))
+//     }
+// }
