@@ -29,7 +29,7 @@
 <hr>
 
 - 외국인 Tutorial
-  - [HTMX Rust | Shourya Sharma]()
+  - [HTMX Rust | Shourya Sharma](#htmx-rust--shourya-sharma)
 
 <hr>
 
