@@ -29,7 +29,7 @@
 <hr>
 
 - 외국인 Tutorial
-  - [(240905)How to Build A Full Stack Rust Dashboard App with Leptos, Actix Web & SurrealDB (Full Tutorial) | WhiteSponge]()
+  - [(240905)How to Build A Full Stack Rust Dashboard App with Leptos, Actix Web & SurrealDB (Full Tutorial) | WhiteSponge](#240905how-to-build-a-full-stack-rust-dashboard-app-with-leptos-actix-web--surrealdb-full-tutorial--whitesponge)
   - [HTMX Rust | Shourya Sharma](#htmx-rust--shourya-sharma)
 
 <hr>
