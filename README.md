@@ -29,6 +29,7 @@
 <hr>
 
 - 외국인 Tutorial
+  - [(240905)How to Build A Full Stack Rust Dashboard App with Leptos, Actix Web & SurrealDB (Full Tutorial) | WhiteSponge]()
   - [HTMX Rust | Shourya Sharma](#htmx-rust--shourya-sharma)
 
 <hr>
@@ -449,5 +450,10 @@ Apr. 9, 2024 · Yosh Wuyts
 
 # HTMX Rust | Shourya Sharma[|🔝|](#link)
 - https://youtube.com/playlist?list=PL7-lpx4W4IU3HLB01mb0Y2QOftxNCoz_Z&si=vv8GGzGp6fvMYhVg
+
+<hr>
+
+# (240905)How to Build A Full Stack Rust Dashboard App with Leptos, Actix Web & SurrealDB (Full Tutorial) | WhiteSponge[|🔝|](#link)
+- https://youtu.be/DQB-cJPYChg?si=I9OimG7SW5XAz25N
 
 <hr>
