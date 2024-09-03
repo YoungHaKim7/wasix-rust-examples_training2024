@@ -28,6 +28,11 @@
 
 <hr>
 
+- 외국인 Tutorial
+  - [HTMX Rust | Shourya Sharma]()
+
+<hr>
+
 # 초기에는 여기에 정리했음(Rust_WASM)
 - https://github.com/YoungHaKim7/Rust_WASM
 
@@ -442,3 +447,7 @@ Apr. 9, 2024 · Yosh Wuyts
  
 <hr>
 
+# HTMX Rust | Shourya Sharma[|🔝|](#link)
+- https://youtube.com/playlist?list=PL7-lpx4W4IU3HLB01mb0Y2QOftxNCoz_Z&si=vv8GGzGp6fvMYhVg
+
+<hr>
