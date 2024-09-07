@@ -4,6 +4,12 @@ https://book.leptos.dev/
 - awesome-leptos 
   - https://github.com/leptos-rs/awesome-leptos
 
+# cargo install cargo-generate
+
+```
+trunk serve --port 3000 --open
+```
+
 # VSCode `settings.json`:
 ```json
 
@@ -16,3 +22,10 @@ https://book.leptos.dev/
 }
 
 ```
+
+# 주요  암기해야할 기능들
+- ReadSignal
+  - https://docs.rs/leptos/latest/leptos/struct.ReadSignal.html
+
+- WriteSignal
+  - https://docs.rs/leptos/latest/leptos/struct.WriteSignal.html
