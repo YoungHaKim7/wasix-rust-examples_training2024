@@ -1,4 +1,4 @@
-use leptos::{component, create_signal, view, IntoView, ReadSignal, SignalUpdate};
+use leptos::{component, view, IntoView};
 
 #[component]
 fn App() -> impl IntoView {
