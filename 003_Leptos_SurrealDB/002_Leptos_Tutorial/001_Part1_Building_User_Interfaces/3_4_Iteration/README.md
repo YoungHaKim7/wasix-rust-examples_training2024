@@ -1,3 +1,17 @@
+# Iteration
+
+- Whether you’re listing todos, displaying a table, or showing product images, iterating over a list of items is a common task in web applications. Reconciling the differences between changing sets of items can also be one of the trickiest tasks for a framework to handle well.
+
+- Leptos supports two different patterns for iterating over items:
+
+  - 1. For static views: `Vec<_>`
+  - 2. For dynamic lists: `<For/>`
+
+- 할 일을 나열하든, 표를 표시하든, 제품 이미지를 표시하든, 항목 목록을 반복하는 것은 웹 애플리케이션에서 흔히 볼 수 있는 작업입니다. 변경하는 항목 집합 간의 차이를 조정하는 것도 프레임워크가 잘 처리하기 위한 가장 까다로운 작업 중 하나가 될 수 있습니다.
+
+- 렙토스는 항목 반복을 위한 두 가지 패턴을 지원합니다:
+
+
 # Dynamic Rendering with the <For/> Component 
 - 구성 요소를 사용한 동적 렌더링
 
@@ -21,4 +35,4 @@
   - 하지만 생성될 때 각 행에 고유한 ID를 생성하고 이를 키 기능의 ID로 사용하는 것과 같은 작업을 수행하는 것이 좋습니다.
 
 Check out the <DynamicList/> component below for an example.
-  - 예를 들어 아래의 <DynamicList/> 구성 요소를 확인하세요.
+ 
