@@ -6,19 +6,6 @@
 
 use leptos::{component, create_signal, view, For, IntoView, SignalDispose, SignalUpdate};
 
-#[component]
-fn App() -> impl IntoView {
-    view! {
-        <h1>"Iteration"</h1>
-        <h2>"Static List"</h2>
-        <p>"Use this pattern if the list itself is static."</p>
-        <StaticList length=5/>
-        <h2>"Dynamic List"</h2>
-        <p>"Use this pattern if the rows in your list will change."</p>
-        <DynamicList initial_length=5/>
-    }
-}
-
 /// A list of counters, without the ability
 /// to add or remove any.
 #[component]
@@ -152,6 +139,19 @@ fn DynamicList(
                 />
             </ul>
         </div>
+    }
+}
+
+#[component]
+fn App() -> impl IntoView {
+    view! {
+        <h1>"Iteration"</h1>
+        <h2>"Static List"</h2>
+        <p>"Use this pattern if the list itself is static."</p>
+        <StaticList length=5/>
+        <h2>"Dynamic List"</h2>
+        <p>"Use this pattern if the rows in your list will change."</p>
+        <DynamicList initial_length=5/>
     }
 }
 
