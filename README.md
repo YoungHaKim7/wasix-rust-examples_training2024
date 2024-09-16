@@ -7,6 +7,8 @@
 
 # link
 
+- [Rust_WASM(preview 01](https://github.com/bytecodealliance/wasi-rs)
+
 - [wat-> wasm변환](#wat2wasm)
 - [Rust에 WASM설치하기wasm-supportrust](#wasm-supportrust)
   - [rust_wasm기초](#rust_wasm)
@@ -36,6 +38,14 @@
 
 # 초기에는 여기에 정리했음(Rust_WASM)
 - https://github.com/YoungHaKim7/Rust_WASM
+
+<hr>
+
+# Experimental WASI API bindings for Rust[|🔝|](#link)
+- wasip1(WASM Preview1)
+  - https://github.com/bytecodealliance/wasi-rs
+
+<hr>
 
 # wat2wasm[|🔝|](#link)
 
