@@ -8,6 +8,7 @@
 # link
 
 - [Rust_WASM(preview 01](https://github.com/bytecodealliance/wasi-rs)
+  - [Rust WASM preview 01](#experimental-wasi-api-bindings-for-rust)
 
 - [wat-> wasm변환](#wat2wasm)
 - [Rust에 WASM설치하기wasm-supportrust](#wasm-supportrust)
